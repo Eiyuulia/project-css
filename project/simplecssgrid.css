@@ -1,0 +1,60 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    margin: 50px 0;
+    text-align: center;
+    color: rgb(0, 88, 88);
+    font-size: 50px;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto 50px;
+    padding: 5px;
+    border: 5px solid black;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1.5fr;
+    grid-template-rows: 100px 500px 100px 50px;
+    grid-template-areas:
+        'logo menu menu'
+        'main main aside'
+        'sponsor sponsor sponsor'
+        'footer footer footer'
+    ;
+    gap: 10px 20px;
+}
+
+.container div {
+    border: 1px solid teal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    grid-area: logo;
+}
+
+.menu {
+    grid-area: menu;
+}
+
+.main {
+    grid-area: main;
+}
+
+.aside {
+    grid-area: aside;
+}
+
+.sponsor {
+    grid-area: sponsor;
+}
+
+.footer {
+    grid-area: footer;
+}
