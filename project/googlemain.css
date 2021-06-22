@@ -1,0 +1,151 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    --font-color: rgb(131, 131, 131);
+    --border-color: rgb(212, 212, 212);
+}
+
+body {
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    display: block;
+    color: black;
+    text-decoration: none;
+}
+
+hr {
+    background-color: var(--border-color);
+    border: none;
+    height: 1px;
+}
+
+.container {
+    display: grid;
+    min-height: 100%;
+    width: 100%;
+    grid-template-rows: 1.2fr 12fr 1fr 1fr;
+
+}
+
+.header {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.head1 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    min-width: 20%;
+}
+
+.head1 a {
+    font-size: 14px;
+}
+
+.head1 .img {
+    max-width: 30px;
+    max-height: 40px;
+    border-radius: 100%;
+}
+
+.head1 img {
+    max-width: 100%;
+    border-radius: 100%;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 7% 0;
+}
+
+.penelusuran {
+    display: flex;
+    align-items: center;
+    width: 40%;
+    height: 40px;
+    padding: 0 1%;
+    margin: 25px 0;
+    border: 1px solid var(--border-color);
+    border-radius: 20px;
+}
+
+.blwsrh {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+    font-size: 14px;
+}
+
+.blwsrh a {
+    margin: 0 20px;
+}
+
+.blwsrh div {
+    padding: 10px;
+    background-color: whitesmoke;
+    color: rgb(75, 75, 75);
+}
+
+.lst {
+    font-size: 14px;
+}
+
+.lst a {
+    display: inline-block;
+    margin: 0 3px;
+    color: blue;
+}
+
+.footer {
+    background-color: whitesmoke;
+    color: var(--font-color);
+}
+
+.footer a {
+    font-size: 14px;
+    color: var(--font-color);
+}
+
+.fa {
+    display: flex;
+    align-items: center;
+    padding: 0 3%;
+}
+
+.fab {
+    display: flex;
+    flex-direction: column;
+}
+
+.fb {
+    height: 100%;
+    padding: 0 3%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.fba {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.fb1 {
+    min-width: 30%;
+}
+
+.fb2 {
+    min-width: 18%;
+}
