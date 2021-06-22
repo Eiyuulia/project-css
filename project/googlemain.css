@@ -21,6 +21,10 @@ a {
     text-decoration: none;
 }
 
+a:hover {
+    text-decoration: underline;
+}
+
 hr {
     background-color: var(--border-color);
     border: none;
@@ -52,13 +56,23 @@ hr {
 }
 
 .head1 .img {
-    max-width: 30px;
+    width: 40px;
+    height: 40px;
+    max-width: 40px;
     max-height: 40px;
     border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.head1 .img:hover {
+    background-color: whitesmoke;
+    cursor: pointer;
 }
 
 .head1 img {
-    max-width: 100%;
+    max-width: 80%;
     border-radius: 100%;
 }
 
@@ -80,6 +94,11 @@ hr {
     border-radius: 20px;
 }
 
+.penelusuran:hover {
+    box-shadow: 0px 1px 3px 1px rgb(212, 212, 212);
+    cursor: text;
+}
+
 .blwsrh {
     display: flex;
     justify-content: center;
@@ -91,10 +110,23 @@ hr {
     margin: 0 20px;
 }
 
+.blwsrh a:hover {
+    text-decoration: none;
+
+}
+
 .blwsrh div {
     padding: 10px;
+    margin: 2px 2px 3px;
     background-color: whitesmoke;
+    border-radius: 8px;
     color: rgb(75, 75, 75);
+}
+
+.blwsrh div:hover {
+    border: 2px solid rgb(212, 212, 212);
+    border-bottom: 3px solid rgb(212, 212, 212);
+    margin: 0;
 }
 
 .lst {
